@@ -2,17 +2,22 @@
 % Please edit documentation in R/zzz.R
 \name{load_object}
 \alias{load_object}
-\title{Load object from OSF}
+\title{Load object from OSF with BiocFileCache}
 \usage{
-load_object(osf_file_name)
+load_object(
+  osf_file_name,
+  bfc = BiocFileCache::BiocFileCache(tools::R_user_dir("HumanRetinaLRSData", which =
+    "cache"), ask = FALSE)
+)
 }
 \arguments{
 \item{osf_file_name}{Name of the file on OSF}
+
+\item{bfc}{BiocFileCache object. Default creates one in package cache directory.}
 }
 \value{
 The R object stored in the RDS file
 }
 \description{
-Load object from OSF
+Load object from OSF with BiocFileCache
 }
-\keyword{internal}

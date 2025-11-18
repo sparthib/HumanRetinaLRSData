@@ -13,4 +13,10 @@ biocViews: ExperimentData, ExperimentHub, RNASeqData, ExpressionData, Homo_sapie
 RoxygenNote: 7.3.2
 Imports:
     SummarizedExperiment,
-    S4Vectors
+    S4Vectors,
+    osfr,
+    utils,
+    BiocFileCache
+Suggests: 
+    testthat
+
