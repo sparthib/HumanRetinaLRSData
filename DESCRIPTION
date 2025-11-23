@@ -6,10 +6,10 @@ Authors@R: c(
     person("Sowmya", "Parthiban", email = "sparthi1@jhu.edu", role = c("aut", "cre")))
 Description: Dataset package containing gene and isoform count matrices,
   and sample metadata for long-read direct cDNA sequencing of human retinal organoid, 2D retinal ganglion cell cultures, and flowthrough from H9 and EP1 cell-lines.
-License: GPL-3
+License: MIT
 Encoding: UTF-8
 LazyData: true
-biocViews: ExperimentData, ExperimentHub, RNASeqData, ExpressionData, Homo_sapiens_Data, CellCulture
+biocViews: ExperimentData, RNASeqData, ExpressionData, Homo_sapiens_Data, CellCulture
 RoxygenNote: 7.3.2
 Imports:
     SummarizedExperiment,
