@@ -14,7 +14,19 @@ library(ggrepel)
 
 ## Overview
 
-This vignette demonstrates how to load and visualize retinal organoids counts data at both the gene and isoform levels and visualize using PCA (Principal Component Analysis). We'll explore expression patterns across different developmental stages.
+`HumanRetinaLRSData` is a companion data package for our long-read sequencing study characterizing isoform diversity, splicing dynamics, and allele-specific expression in developing human retinal organoids.
+
+In this study, we used nanopore-based long-read RNA sequencing to profile human stem cell-derived retinal organoids across multiple developmental stages, as well as purified retinal ganglion cells. These datasets enable exploration of gene- and isoform-level expression patterns, detection of differential isoform usage, identification of neuron-specific splicing programs, and quantification of allelic imbalance.
+
+All raw and processed data generated in the study have been deposited in an Open Science Framework (OSF) [repository](https://osf.io/z2yvs/overview). The `HumanRetinaLRSData` package provides convenient access to these files directly from the OSF node using the `osfr` package.
+
+For ease of use, HumanRetinaLRSData is designed to:
+
+-   query and retrieve study datasets from the OSF project,
+
+-   cache downloaded archives via `BiocFileCache`, and
+
+-   load gene- and isoform-level counts into R for downstream visualization and analysis.
 
 ## Load Data
 
