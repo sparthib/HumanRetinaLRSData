@@ -1,6 +1,7 @@
 #' Gene-level counts for retinal organoid (RO) samples
 #'
 #' @return A SummarizedExperiment object
+#' @import SummarizedExperiment
 #' @export
 ROGeneLevelData <- function() {
   load_object("ROGeneLevelData.rds")

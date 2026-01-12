@@ -4,10 +4,16 @@ ret_files <- NULL
 .onLoad <- function(libname, pkgname) {
   requireNamespace("osfr", quietly = TRUE)
   requireNamespace("BiocFileCache", quietly = TRUE)
-  
-  proj_url <- "https://osf.io/z2yvs/"
-  ret_project <- osfr::osf_retrieve_node(proj_url)
-  ret_files <<- osfr::osf_ls_files(ret_project, "HumanRetinaLRSData")
+
+  # Try to initialize ret_files, but don't fail if OSF is unreachable
+  tryCatch({
+    proj_url <- "https://osf.io/z2yvs/"
+    ret_project <- osfr::osf_retrieve_node(proj_url)
+    ret_files <<- osfr::osf_ls_files(ret_project, "HumanRetinaLRSData")
+  }, error = function(e) {
+    # Set ret_files to NULL; will be initialized on first use
+    ret_files <<- NULL
+  })
 }
 
 #' List available files on OSF

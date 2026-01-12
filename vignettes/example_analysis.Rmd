@@ -1,6 +1,10 @@
 ---
 title: "Retinal Organoids counts data: Gene and Isoform Level Exploration"
-output: html_document
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Retinal Organoids counts data: Gene and Isoform Level Exploration}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r setup, include=FALSE}
