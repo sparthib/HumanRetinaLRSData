@@ -19,7 +19,5 @@ NULL (invisibly). Called for side effect of clearing cache.
 Clear OSF cache
 }
 \examples{
-if (interactive()) {
-  clear_osf_cache()
-}
+clear_osf_cache()
 }

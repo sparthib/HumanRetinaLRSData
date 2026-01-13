@@ -4,10 +4,8 @@
 #' @import SummarizedExperiment
 #' @export
 #' @examples
-#' if (interactive()) {
 #' ro_data <- ROGeneLevelData()
 #' ro_data
-#' }
 ROGeneLevelData <- function() {
   load_object("ROGeneLevelData.rds")
 }
@@ -17,10 +15,8 @@ ROGeneLevelData <- function() {
 #' @return A SummarizedExperiment object
 #' @export
 #' @examples
-#' if (interactive()) {
 #' ro_iso_data <- ROIsoformLevelData()
 #' ro_iso_data
-#' }
 ROIsoformLevelData <- function() {
   load_object("ROIsoformLevelData.rds")
 }
@@ -30,10 +26,8 @@ ROIsoformLevelData <- function() {
 #' @return A SummarizedExperiment object
 #' @export
 #' @examples
-#' if (interactive()) {
 #' ftrgc_data <- FTRGCGeneLevelData()
 #' ftrgc_data
-#' }
 FTRGCGeneLevelData <- function() {
   load_object("FTRGCGeneLevelData.rds")
 }
@@ -43,10 +37,8 @@ FTRGCGeneLevelData <- function() {
 #' @return A SummarizedExperiment object
 #' @export
 #' @examples
-#' if (interactive()) {
 #' ftrgc_iso_data <- FTRGCIsoformLevelData()
 #' ftrgc_iso_data
-#' }
 FTRGCIsoformLevelData <- function() {
   load_object("FTRGCIsoformLevelData.rds")
 
@@ -57,10 +49,8 @@ FTRGCIsoformLevelData <- function() {
 #' @return A numeric matrix
 #' @export
 #' @examples
-#' if (interactive()) {
 #' ase_counts <- ASEGeneCounts()
 #' head(ase_counts)
-#' }
 ASEGeneCounts <- function() {
   load_object("ase_gene_counts.RDS")
 }

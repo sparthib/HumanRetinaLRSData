@@ -22,8 +22,6 @@ The R object stored in the RDS file
 Load object from OSF with BiocFileCache
 }
 \examples{
-if (interactive()) {
-  data <- load_object("ROGeneLevelData.rds")
-  data
-}
+data <- load_object("ROGeneLevelData.rds")
+data
 }

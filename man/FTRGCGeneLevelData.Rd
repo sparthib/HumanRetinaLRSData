@@ -13,8 +13,6 @@ A SummarizedExperiment object
 Gene-level counts for flow through (FT) and retinal ganglion cell (RGC) samples
 }
 \examples{
-if (interactive()) {
 ftrgc_data <- FTRGCGeneLevelData()
 ftrgc_data
-}
 }

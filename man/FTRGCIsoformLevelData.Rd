@@ -13,8 +13,6 @@ A SummarizedExperiment object
 Isoform-level counts for flow through (FT) and retinal ganglion cell (RGC) samples
 }
 \examples{
-if (interactive()) {
 ftrgc_iso_data <- FTRGCIsoformLevelData()
 ftrgc_iso_data
-}
 }

@@ -20,9 +20,7 @@ ret_files <- NULL
 #' @return Character vector of file names
 #' @export
 #' @examples
-#' if (interactive()) {
-#'   list_osf_files()
-#' }
+#' list_osf_files()
 list_osf_files <- function() {
   if (is.null(ret_files)) {
     proj_url <- "https://osf.io/z2yvs/"
@@ -41,10 +39,8 @@ list_osf_files <- function() {
 #' @importFrom osfr osf_retrieve_node osf_ls_files osf_download
 #' @export
 #' @examples
-#' if (interactive()) {
-#'   data <- load_object("ROGeneLevelData.rds")
-#'   data
-#' }
+#' data <- load_object("ROGeneLevelData.rds")
+#' data
 load_object <- function(osf_file_name,
                         bfc = BiocFileCache::BiocFileCache(
                           tools::R_user_dir( "HumanRetinaLRSData", which = "cache"),
@@ -102,9 +98,7 @@ load_object <- function(osf_file_name,
 #' @return NULL (invisibly). Called for side effect of clearing cache.
 #' @export
 #' @examples
-#' if (interactive()) {
-#'   clear_osf_cache()
-#' }
+#' clear_osf_cache()
 clear_osf_cache <- function(bfc = BiocFileCache::BiocFileCache(
   tools::R_user_dir( "HumanRetinaLRSData", which = "cache"),
   ask = FALSE
