@@ -12,3 +12,8 @@ Character vector of file names
 \description{
 List available files on OSF
 }
+\examples{
+if (interactive()) {
+  list_osf_files()
+}
+}

@@ -12,6 +12,14 @@ clear_osf_cache(
 \arguments{
 \item{bfc}{BiocFileCache object}
 }
+\value{
+NULL (invisibly). Called for side effect of clearing cache.
+}
 \description{
 Clear OSF cache
+}
+\examples{
+if (interactive()) {
+  clear_osf_cache()
+}
 }

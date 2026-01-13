@@ -12,3 +12,9 @@ A SummarizedExperiment object
 \description{
 Gene-level counts for retinal organoid (RO) samples
 }
+\examples{
+if (interactive()) {
+ro_data <- ROGeneLevelData()
+ro_data
+}
+}

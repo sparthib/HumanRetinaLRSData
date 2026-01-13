@@ -65,7 +65,7 @@ All data are provided as `SummarizedExperiment` objects (except ASE data, which 
 
 If you use this data package, please cite our associated study:
 
-[Citation information to be added]
+Keuthan CJ, Parthiban S, Chang Y-Y, Shan X, Chang X, Yan E, Cavalier S, Timp W, Hicks SC, Zack DJ (2025). Dynamic changes in mRNA isoform usage during human retinal development. *bioRxiv*. doi: [10.1101/2025.11.26.689062](https://doi.org/10.1101/2025.11.26.689062)
 
 ## Contact
 
