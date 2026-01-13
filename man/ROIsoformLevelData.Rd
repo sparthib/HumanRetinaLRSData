@@ -12,3 +12,7 @@ A SummarizedExperiment object
 \description{
 Isoform-level counts for retinal organoid (RO) samples
 }
+\examples{
+ro_iso_data <- ROIsoformLevelData()
+ro_iso_data
+}

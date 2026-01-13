@@ -12,3 +12,7 @@ A numeric matrix
 \description{
 Allele-specific expression (ASE) gene counts
 }
+\examples{
+ase_counts <- ASEGeneCounts()
+head(ase_counts)
+}

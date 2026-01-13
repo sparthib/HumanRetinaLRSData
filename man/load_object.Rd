@@ -21,3 +21,7 @@ The R object stored in the RDS file
 \description{
 Load object from OSF with BiocFileCache
 }
+\examples{
+data <- load_object("ROGeneLevelData.rds")
+data
+}

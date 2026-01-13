@@ -19,6 +19,8 @@ ret_files <- NULL
 #' List available files on OSF
 #' @return Character vector of file names
 #' @export
+#' @examples
+#' list_osf_files()
 list_osf_files <- function() {
   if (is.null(ret_files)) {
     proj_url <- "https://osf.io/z2yvs/"
@@ -29,14 +31,17 @@ list_osf_files <- function() {
 }
 
 #' Load object from OSF with BiocFileCache
-#' 
+#'
 #' @param osf_file_name Name of the file on OSF
 #' @param bfc BiocFileCache object. Default creates one in package cache directory.
 #' @return The R object stored in the RDS file
 #' @importFrom BiocFileCache BiocFileCache bfcquery bfcadd
 #' @importFrom osfr osf_retrieve_node osf_ls_files osf_download
 #' @export
-load_object <- function(osf_file_name, 
+#' @examples
+#' data <- load_object("ROGeneLevelData.rds")
+#' data
+load_object <- function(osf_file_name,
                         bfc = BiocFileCache::BiocFileCache(
                           tools::R_user_dir( "HumanRetinaLRSData", which = "cache"),
                           ask = FALSE
@@ -90,7 +95,10 @@ load_object <- function(osf_file_name,
 
 #' Clear OSF cache
 #' @param bfc BiocFileCache object
+#' @return NULL (invisibly). Called for side effect of clearing cache.
 #' @export
+#' @examples
+#' clear_osf_cache()
 clear_osf_cache <- function(bfc = BiocFileCache::BiocFileCache(
   tools::R_user_dir( "HumanRetinaLRSData", which = "cache"),
   ask = FALSE
